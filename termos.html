@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termos de Uso — Maxx Protege</title>
+<meta name="description" content="Termos de Uso da Maxx Protege, clube de benefícios e assistência veicular em Blumenau/SC.">
+<link rel="icon" href="assets/logo-color.png" type="image/png">
+<meta name="theme-color" content="#3005FE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#3005FE;
+    --blue-dark:#1f0399;
+    --orange:#F26531;
+    --orange-dark:#d4501f;
+    --ink:#0E1024;
+    --paper:#FFFFFF;
+    --paper-soft:#F5F6FB;
+    --line:#E3E4EF;
+    --muted:#5A5C74;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.brand-face{
+    font-family:'Rajdhani',system-ui,sans-serif;
+    font-weight:700;
+    letter-spacing:0.01em;
+    margin:0;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{
+    width:100%;
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 26px;
+    border-radius:8px;
+    background:var(--orange);
+    color:#fff;
+    font-family:'Rajdhani',sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s ease, background .15s ease, box-shadow .15s ease;
+    box-shadow:0 8px 20px -8px rgba(242,101,49,.6);
+  }
+  .btn:hover{background:var(--orange-dark); transform:translateY(-1px);}
+  .btn svg{flex:none;}
+
+  /* Header */
+  .site-header{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:100;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(180%) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .site-header .wrap{
+    height:68px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .site-header .logo img{height:30px; width:auto;}
+  .header-cta{padding:10px 18px; font-size:.9rem;}
+
+  main{padding-top:68px;}
+
+  /* Legal content */
+  .legal-page{
+    max-width:700px;
+    margin:0 auto;
+    padding:48px 20px 64px;
+  }
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-weight:600;
+    font-size:.92rem;
+    color:var(--blue);
+    text-decoration:none;
+    margin-bottom:28px;
+  }
+  .back-link:hover{color:var(--orange);}
+  .legal-page h1{
+    font-size:2rem;
+    color:var(--ink);
+    margin-bottom:8px;
+  }
+  .legal-page .updated{
+    color:var(--muted);
+    font-size:.9rem;
+    margin-bottom:36px;
+  }
+  .legal-body h2{
+    font-size:1.25rem;
+    color:var(--blue);
+    margin-top:36px;
+    margin-bottom:12px;
+  }
+  .legal-body h2:first-child{margin-top:0;}
+  .legal-body p{
+    color:var(--ink);
+    line-height:1.7;
+    margin:0 0 16px;
+    font-size:1rem;
+  }
+  .legal-body ul{
+    margin:0 0 16px;
+    padding-left:22px;
+    color:var(--ink);
+    line-height:1.7;
+  }
+  .legal-body li{margin-bottom:6px;}
+
+  /* Footer */
+  footer{
+    background:var(--ink);
+    color:#B9BAD1;
+    padding:40px 0 26px;
+  }
+  footer .foot-top{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    align-items:flex-start;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+    margin-bottom:18px;
+  }
+  footer .logo img{height:26px;}
+  footer .foot-links{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    font-size:.92rem;
+  }
+  footer .foot-links a{text-decoration:none;}
+  footer .foot-links a:hover{color:#fff;}
+  footer .foot-label{
+    display:block;
+    font-family:'Rajdhani',sans-serif;
+    font-weight:700;
+    font-size:.78rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:#fff;
+    margin-bottom:2px;
+  }
+  footer .foot-bottom{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    font-size:.8rem;
+    color:#82839c;
+  }
+
+  /* Floating WhatsApp */
+  .wa-float{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    z-index:200;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:var(--orange);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 24px -6px rgba(242,101,49,.65);
+    text-decoration:none;
+    transition:transform .15s ease;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+  .wa-float svg{width:28px; height:28px; color:#fff;}
+
+  /* Responsive */
+  @media (min-width:640px){
+    .legal-page h1{font-size:2.3rem;}
+    footer .foot-top{flex-direction:row; justify-content:space-between; align-items:center;}
+  }
+  @media (min-width:960px){
+    .site-header .header-cta{padding:12px 22px; font-size:1rem;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Maxx Protege">
+      <img src="assets/logo-color.png" alt="Maxx Protege">
+    </a>
+    <a class="btn header-cta" href="https://wa.me/554733042028" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"></path><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.1.9.9-3-.2-.3C3.6 14.6 3.1 13 3.1 12c0-4.9 4-8.9 8.9-8.9s8.9 4 8.9 8.9-4 8.9-8.9 8.9z"></path></svg>
+      Falar no WhatsApp
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="legal-page">
+    <a class="back-link" href="index.html">← Voltar para o início</a>
+
+    <h1>Termos de Uso</h1>
+    <p class="updated">Última atualização: setembro de 2026</p>
+
+    <div class="legal-body">
+
+      <h2>1. Aceitação dos termos</h2>
+      <p>Ao acessar este site, aderir ao clube ou utilizar o aplicativo Maxx Protege, o usuário declara ter lido, compreendido e aceito estes Termos de Uso.</p>
+
+      <h2>2. Quem pode utilizar</h2>
+      <p>O uso do aplicativo e a adesão ao clube são destinados a pessoas maiores de 18 anos, que se comprometem a fornecer informações verdadeiras, completas e atualizadas no momento do cadastro.</p>
+
+      <h2>3. Descrição do serviço</h2>
+      <p>A Maxx Protege é um clube de benefícios e assistência veicular. Por meio do aplicativo do associado, é possível consultar boletos, acompanhar benefícios disponíveis e verificar o status da proteção contratada.</p>
+
+      <h2>4. Cadastro e responsabilidades do associado</h2>
+      <p>O associado é responsável pela veracidade dos dados informados e por manter suas informações de cadastro, contato e do veículo atualizadas junto à Maxx Protege.</p>
+
+      <h2>5. Mensalidades e pagamentos</h2>
+      <p>A permanência no clube está condicionada ao pagamento em dia das mensalidades. O atraso no pagamento pode resultar na suspensão temporária dos benefícios até a regularização.</p>
+
+      <h2>6. Cancelamento</h2>
+      <p>O associado pode solicitar o cancelamento da sua participação no clube a qualquer momento, pelos canais de atendimento informados neste site.</p>
+
+      <h2>7. Limitação de responsabilidade</h2>
+      <p>A Maxx Protege envida seus melhores esforços para prestar os serviços de assistência descritos nestes Termos, dentro das condições vigentes do plano contratado por cada associado.</p>
+
+      <h2>8. Propriedade intelectual</h2>
+      <p>A marca Maxx Protege, seu logotipo e demais elementos de identidade visual são de propriedade da empresa, sendo vedada sua reprodução sem autorização prévia.</p>
+
+      <h2>9. Alterações destes termos</h2>
+      <p>Estes Termos de Uso podem ser atualizados periodicamente. A versão vigente estará sempre disponível nesta página, com a respectiva data de atualização.</p>
+
+      <h2>10. Legislação aplicável e foro</h2>
+      <p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da comarca de Blumenau, Santa Catarina, para dirimir eventuais controvérsias.</p>
+
+      <h2>11. Contato</h2>
+      <p>Dúvidas sobre estes Termos de Uso podem ser enviadas pelo WhatsApp (47) 3304-2028.</p>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="logo" href="index.html" aria-label="Maxx Protege">
+        <img src="assets/logo-white.png" alt="Maxx Protege">
+      </a>
+      <div class="foot-links">
+        <a href="https://wa.me/554733042028" target="_blank" rel="noopener">(47) 3304-2028 · WhatsApp</a>
+        <a href="https://www.maxxprotege.com.br" target="_blank" rel="noopener">www.maxxprotege.com.br</a>
+      </div>
+      <div class="foot-links">
+        <span class="foot-label">Legal</span>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Maxx Protege — CNPJ 41.932.235/0001-07 · Blumenau/SC</span>
+      <span id="copyright"></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/554733042028" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"></path><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.1.9.9-3-.2-.3C3.6 14.6 3.1 13 3.1 12c0-4.9 4-8.9 8.9-8.9s8.9 4 8.9 8.9-4 8.9-8.9 8.9z"></path></svg>
+</a>
+
+<script>
+  document.getElementById('copyright').textContent = '© ' + new Date().getFullYear() + ' Maxx Protege. Todos os direitos reservados.';
+</script>
+
+</body>
+</html>
